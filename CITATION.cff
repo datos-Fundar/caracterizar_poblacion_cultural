@@ -1,32 +1,30 @@
-/*
-Este es el archivo de citado del proyecto.
-Por favor rellenarlo con los datos correspondientes y borrar los comentarios.
-Para campos que no estén presentes en ésta plantilla de ejemplo, ver la
-documentación completa del formato:
-https://github.com/citation-file-format/citation-file-format/blob/main/schema-guide.md
-*/
-
 cff-version: 1.2.0
 message: "Si usás este repositorio, por favor citalo usando estos datos."
 license: CC-BY-NC-SA-4.0
-type: dataset
-date-released: "YYYY-MM-DD"
-title: "Dolor sit amet"
+type: software
+date-released: "2024-12-20"
+title: "Guía práctica para caracterizar a la población objetivo de una política pública a partir de registros administrativos"
 abstract: >-
-  Por favor cambiar este texto. Acá va una descripción
-  del artículo y/o de los datos que contiene el repo.
+  En este repositorio se comparte el código que se ha utilizado para el análisis del documento "Guía práctica para caracterizar a la población objetivo de una política pública a partir de registros administrativos". 
+  En este trabajo se describe la experiencia colaborativa entre el Área de Datos de Fundar y la Dirección de Planificación y Seguimiento de Gestión del Ministerio de Cultura de Nación, donde se buscó identificar herramientas útiles para caracterizar a la población objetivo de las políticas culturales.
 
-repository-code: "https://github.com/datos-Fundar/dolorsitamet"
-url: "https://fund.ar/dolorsitamet"
+repository-code: "https://github.com/datos-Fundar/caracterizar_poblacion_cultural"
+url: "https://fund.ar/publicacion/guia-caracterizar-poblacion-objetivo-registros-administrativos/"
 
 identifiers:
-  - description: "Breve descripción del proyecto"
+  - description: "Caracterización de población objetivo de políticas públicas"
     type: doi
     value: 10.5281/zenodo.123456  // REEMPLAZAR ESTO CON EL DOI CORRESPONDIENTE Y CAMBIARLO EN EL README
 authors:
-  // A partir de acá, agregar los datos de lxs autores
-  - given-names: "Lorem"
-    family-names: "Ipsum"
+  - given-names: "Alejandro"
+    family-names: "Avenburg"
     affiliation: "Fundar"
-    email: lipsum@fund.ar
-    
+    email: aavenburg@fund.ar
+  - given-names: "Julia"
+    family-names: "Houllé"
+  - given-names: "Paula"
+    family-names: "Luvini"
+    affiliation: "Fundar"
+    email: pluvini@fund.ar
+  - given-names: "Magalí"
+    family-names: "Rodrigues Pires"
