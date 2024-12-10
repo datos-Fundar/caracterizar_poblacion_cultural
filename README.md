@@ -4,7 +4,7 @@
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%20NC%20SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-<!-- [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1234.svg)](https://zenodo.org/doi/10.5281/zenodo.11186044) -->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14365555.svg)](https://doi.org/10.5281/zenodo.14365555)
 
 En este repositorio se comparte el código que se ha utilizado para el análisis del documento **Guía práctica para caracterizar a la población objetivo de una política pública a partir de registros administrativos**[^1]. En este trabajo se describe la experiencia colaborativa entre el Área de Datos de Fundar y la Dirección de Planificación y Seguimiento de Gestión del Ministerio de Cultura de Nación, donde se buscó identificar herramientas útiles para caracterizar a la población objetivo de las políticas culturales.
 
@@ -20,7 +20,7 @@ Avenburg, A., Houllé, J., Luvini, P. y Rodrigues Pires, M. (2022). Guía práct
 
 ```bibtex
 @report{caracterizarcultura,
-  author    = {Avenburg, A.; Houllé, J.; Luvini, P.; Rodrigues Pires, M. },
+  author    = {Avenburg, A.; Houllé, J.; Luvini, P.; Rodrigues Pires, M.},
   title     = {Guía práctica para caracterizar a la población objetivo de una política pública a partir de registros administrativos.},
   year      = {2022},
   institution = {Fundar},

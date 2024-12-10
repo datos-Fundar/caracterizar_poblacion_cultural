@@ -14,7 +14,7 @@ url: "https://fund.ar/publicacion/guia-caracterizar-poblacion-objetivo-registros
 identifiers:
   - description: "Caracterización de población objetivo de políticas públicas"
     type: doi
-    value: 10.5281/zenodo.123456  // REEMPLAZAR ESTO CON EL DOI CORRESPONDIENTE Y CAMBIARLO EN EL README
+    value: 10.5281/zenodo.14365555
 authors:
   - given-names: "Alejandro"
     family-names: "Avenburg"
