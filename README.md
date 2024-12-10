@@ -1,67 +1,41 @@
-# Lorem Ipsum
+# Guía práctica para caracterizar a la población objetivo de una política pública a partir de registros administrativos
 
-<!-- CAMBIAR "https://place-hold.it/1920x1080" POR EL LINK A LA IMAGEN CORRESPONDIENTE -->
-[![Título del Artículo](https://place-hold.it/1920x1080)](https://fund.ar)
+[![Título del Artículo](https://fund.ar/wp-content/uploads/2023/02/iStock-941228062-scaled.jpg)](https://fund.ar/publicacion/guia-caracterizar-poblacion-objetivo-registros-administrativos/)
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%20NC%20SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
 <!-- [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1234.svg)](https://zenodo.org/doi/10.5281/zenodo.11186044) -->
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+En este repositorio se comparte el código que se ha utilizado para el análisis del documento **Guía práctica para caracterizar a la población objetivo de una política pública a partir de registros administrativos**[^1]. En este trabajo se describe la experiencia colaborativa entre el Área de Datos de Fundar y la Dirección de Planificación y Seguimiento de Gestión del Ministerio de Cultura de Nación, donde se buscó identificar herramientas útiles para caracterizar a la población objetivo de las políticas culturales.
 
-### Ejemplos de alertas destacadas
+La manera de responder a la pregunta inicial de la Guía fue mediante un análisis de clustering. La utilización de esta metodología permitió dividir a la población en 6 grupos con características distintas y que indican la presencia de diferentes perfiles. Para ello, se consideraron tanto la actividad que desarrollaban como su lugar de residencia, relación laboral e ingresos culturales, entre otros. El código para replicarlo se encuentra en el siguiente [jupyter notebook](https://github.com/datos-Fundar/caracterizar_poblacion_cultural/blob/main/clusters.ipynb).
+
+**Cita Sugerida:**
+```
+Avenburg, A., Houllé, J., Luvini, P. y Rodrigues Pires, M. (2022). Guía práctica para caracterizar a la población objetivo de una política pública a partir de registros administrativos.
+```
+
+
+**Bibtex:**
+
+```bibtex
+@report{caracterizarcultura,
+  author    = {Avenburg, A.; Houllé, J.; Luvini, P.; Rodrigues Pires, M. },
+  title     = {Guía práctica para caracterizar a la población objetivo de una política pública a partir de registros administrativos.},
+  year      = {2022},
+  institution = {Fundar},
+  type      = {Document}
+}
+```
+
+**Producción del Repositorio de Datos**: Paula Luvini
 
 > [!NOTE]
-> Información importante o útil.
+> Se pueden encontrar los datos abiertos del Registro Federal de Cultura (RFC) para replicar el ejercicio en el siguiente [link.](https://datos.gob.ar/dataset/cultura-registro-federal-cultura)
 
-> [!TIP]
-> Algún consejo útil a la hora de utilizar este contenido.
 
-> [!IMPORTANT]
-> Información clave para usar este repositorio.
+[^1]: [Avenburg, A., Houllé, J., Luvini, P. y Rodrigues Pires, M. (2022). Guía práctica para caracterizar a la población objetivo de una política pública a partir de registros administrativos. ](https://fund.ar/publicacion/guia-caracterizar-poblacion-objetivo-registros-administrativos/)
 
-> [!WARNING]
-> Información urgente para evitar problemas.
-
-> [!CAUTION]
-> Potenciales riesgos.
-
-## Ejemplo de código en `R`
-
-```r
-datos <- tibble(
-  "iso" = c("ARG", "FRA"),
-  "2006" = c(2,1),
-  "2010" = c(2,1),
-  "2014" = c(2,1),
-  "2018" = c(2,2),
-  "2022" = c(3,2)
-)
-
-datos %>% 
-  pivot_longer(cols = -iso,
-               values_to = "copas", names_to = "anio")
-               
-```
-
-## Ejemplo de código en `Python`
-
-```python
-import seaborn as sns
-from run import main, PATHS
-
-empalme_df = main(**PATHS)
-
-# VABpb per capita por provincia 
-to_plot = empalme_df.query(expr="provincia != 'No distribuido'") # Solo hay datos entre 2004-2022
-anio_max = to_plot.anio.max()
-col_ord = to_plot[to_plot.anio==anio_max].sort_values(by='vab_pb_per_capita',ascending=False)['provincia'].to_list()
-g =sns.FacetGrid(to_plot, col='provincia', col_wrap=4, col_order=col_ord)
-g.map_dataframe(sns.lineplot, x='anio', y='vab_pb_per_capita')
-g.set_axis_labels(x_var = "Año", y_var= "Pesos constantes de 2004" )
-g.set_titles(col_template="{col_name}")
-g.tight_layout()
-```
 
 ---
 <div>&nbsp;</div>
